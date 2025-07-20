@@ -76,4 +76,3 @@ struct ast_node {
 
 ast_node *parse(const char *source_code);
 void free_ast(ast_node *node);
-
