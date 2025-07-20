@@ -224,6 +224,27 @@ token_t *get_next_token(const char *source_code, int *index) {
 			return token;
 		}
 
+		if (source_code[*index] == ';') {
+			char *text = strndup(source_code + *index, 1);
+			if (!text) {
+				fprintf(stderr, "Memory allocate failed at %s:%d", __FILE__, __LINE__);
+				return NULL;
+			}
+
+			token_t *token = malloc(sizeof(token_t));
+			if (!token){
+				fprintf(stderr, "Memory allocate failed at %s:%d", __FILE__, __LINE__);
+				free(text);
+				return NULL;
+			}
+
+			token->text = text;
+			token->type = TOKEN_SEMICOLON;
+
+			(*index)++;
+			return token;
+		}
+
 		if (source_code[*index] == '=') {
 			char *text = strndup(source_code + *index, 1);
 			if (!text) {
@@ -286,6 +307,7 @@ token_t *get_next_token(const char *source_code, int *index) {
 			(*index)++;
 			return token;
 		}
+
 
 		if (source_code[*index] == (char)EOF) {
 			char *text = strndup(source_code + *index, 1);
