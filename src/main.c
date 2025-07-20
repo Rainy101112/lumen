@@ -1,3 +1,11 @@
+/*
+ *
+ *		main.c
+ *		LUMEN LANGUAGE PROJECT
+ *		Rainy101112 - 2025/7/20
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <token.h>

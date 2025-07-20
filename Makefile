@@ -1,3 +1,9 @@
+#
+#		token.h
+#		LUMEN LANGUAGE PROJECT
+#		Rainy101112 - 2025/7/20
+#
+
 CC			:= clang
 C_FLAGS		:= -Wall -Wextra -O2 -g3 -I include
 

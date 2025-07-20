@@ -1,3 +1,11 @@
+/*
+ *
+ *		lexer.h
+ *		LUMEN LANGUAGE PROJECT
+ *		Rainy101112 - 2025/7/20
+ *
+ */
+
 #pragma once
 
 #include <token.h>

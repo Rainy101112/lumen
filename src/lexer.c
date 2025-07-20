@@ -1,3 +1,11 @@
+/*
+ *
+ *		lexer.c
+ *		LUMEN LANGUAGE PROJECT
+ *		Rainy101112 - 2025/7/20
+ *
+ */
+
 #include <token.h>
 #include <string.h>
 #include <stdlib.h>
