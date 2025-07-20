@@ -22,6 +22,8 @@ static token_type_t check_keyword(char *text) {
 	} keywords[] = {
 		{"if", TOKEN_KEYWORD_IF},
 		{"else", TOKEN_KEYWORD_ELSE},
+		{"for", TOKEN_KEYWORD_FOR},
+		{"while", TOKEN_KEYWORD_WHILE},
 		{"break", TOKEN_KEYWORD_BREAK},
 		{"continue", TOKEN_KEYWORD_CONTINUE}
 	};
